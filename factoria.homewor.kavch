@@ -1,0 +1,16 @@
+function calculateFactorial(num = 0) {
+    if (num === 0) {
+        return 1;
+    } else if (num < 0) {
+        return;
+    }
+    let result = 1;
+    for (let i = 1; i <= num; i++) {
+        result *= i;
+    }
+    return result;
+}
+
+const inputNumber = 4;
+
+console.log(calculateFactorial(inputNumber));
